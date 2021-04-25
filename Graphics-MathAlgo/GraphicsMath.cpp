@@ -23,6 +23,16 @@ bool NoSIMDVector3D::Equals(NoSIMDVector3D base, NoSIMDVector3D other)
     return false;
 }
 
+float NoSIMDVector3D::DotProduct(NoSIMDVector3D base, NoSIMDVector3D other)
+{
+    return ((base.x * other.x) + (base.y * other.y) + (base.z * other.z));
+}
+
+NoSIMDVector3D NoSIMDVector3D::CrossProduct(NoSIMDVector3D base, NoSIMDVector3D other)
+{
+    return ((base.y * other.z) - (base.z * other.y), (base.z * other.x) - (base.x * other.z), (base.x * other.y) - (base.y * other.x));
+}
+
 NoSIMDVector3D NoSIMDVector3D::Zero()
 {
     return NoSIMDVector3D(0.f,0.f,0.f);
