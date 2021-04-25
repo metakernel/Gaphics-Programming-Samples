@@ -1,0 +1,13 @@
+﻿extensions: designer.cs generated.cs
+extensions: .cs .cpp .h
+// Copyright © 2021 Vincent Roy
+extensions: .aspx .ascx
+<%-- 
+Copyright © 2021 Vincent Roy
+--%>
+extensions: .vb
+'Sample license text.
+extensions:  .xml .config .xsd
+<!--
+Copyright © 2021 Vincent Roy
+-->
