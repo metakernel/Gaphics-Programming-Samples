@@ -22,6 +22,8 @@ struct NoSIMDVector3D
 	// Get the vector length
 	float GetLength();
 
+	NoSIMDVector3D Normalize();
+
 	//=============== Operators overload========================//
 	friend bool operator==(const NoSIMDVector3D& lhs, const NoSIMDVector3D& rhs);
 	friend NoSIMDVector3D operator+(const NoSIMDVector3D& lhs, const NoSIMDVector3D& rhs);

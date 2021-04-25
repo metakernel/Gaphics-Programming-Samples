@@ -105,6 +105,12 @@ float NoSIMDVector3D::GetLength()
     return result;
 }
 
+NoSIMDVector3D NoSIMDVector3D::Normalize()
+{
+    // Get normalize vector by dividing component with its length
+    return *this / this->GetLength();
+}
+
 bool operator==(const NoSIMDVector3D& lhs, const NoSIMDVector3D& rhs)
 {
     if (lhs.x == rhs.x && lhs.y == rhs.y && lhs.z == rhs.z)
