@@ -4,7 +4,7 @@
 //
 
 #include <iostream>
-#include "NoSIMDVector3D.h"
+#include "GraphicsMath.h"
 #include <string>
 
 #define PRINTTEST(DESC,RESULT) std::cout << DESC << ": " << RESULT << '\n'

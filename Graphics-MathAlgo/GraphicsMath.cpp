@@ -1,4 +1,4 @@
-#include "NoSIMDVector3D.h"
+#include "GraphicsMath.h"
 
 NoSIMDVector3D::NoSIMDVector3D(float x = 0.f, float y = 0.f, float z = 0.f)
 {

@@ -17,12 +17,15 @@ public:
 	float y;
 	float z;
 
+	// Same as == but in a static function
 	static bool Equals(NoSIMDVector3D base, NoSIMDVector3D other);
 
-	//=============== Operators overload========================//
-
-	friend bool operator==(const NoSIMDVector3D& lhs, const NoSIMDVector3D& rhs);
-	NoSIMDVector3D& operator+=(const NoSIMDVector3D& lhs);
+	// Transform vector into a showable string representation
 	std::string ToString();
+
+	//=============== Operators overload========================//
+	friend bool operator==(const NoSIMDVector3D& lhs, const NoSIMDVector3D& rhs);
+
+	NoSIMDVector3D& operator+=(const NoSIMDVector3D& lhs);
 };
 
