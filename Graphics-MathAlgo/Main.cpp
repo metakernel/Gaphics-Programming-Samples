@@ -31,4 +31,7 @@ void VectorLogTest()
 
     std::string isEqualResult_v1v1Copy = (v1 == v1Copy) ? "true" : "false";
     PRINTTEST("Vector v1(12, 10, 10) and v1Copy(12, 10, 10) are equals", isEqualResult_v1v1Copy);
+
+    NoSIMDVector3D v3(1.f, 2.f, 3.f);
+    PRINTTEST("The length of vector v3(1,2,3) is", std::to_string(v3.GetLength()));
 }
